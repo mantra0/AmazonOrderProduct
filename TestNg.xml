@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "PMFBY" parallel="classes">
+    <test name="CHROME CHECK REVIEW">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="in.amazon.execution.TestExecution"/>
+        </classes>
+    </test>
+    <test name="FIREFOX CHECK REVIEW">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="in.amazon.execution.TestExecution"/>
+        </classes>
+    </test>
+</suite>
